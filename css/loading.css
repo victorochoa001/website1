@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.loading-text {
+    font-size: 50px;
+    color: white;
+
+
+}
+
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    position: absolute;
+    z-index: -1;
+    background-image: url("images/neom-8Ln8oMv_LLI-unsplash.jpg");
+    backgorund-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
