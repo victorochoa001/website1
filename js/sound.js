@@ -1,4 +1,4 @@
-sounds = ['applause', 'boo', 'gasp, 'tada', 'victory', 'wrong']
+sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong']
 
 sounds.forEach(sound => {
     btn = document.createElement('button')
@@ -13,9 +13,22 @@ sounds.forEach(sound => {
 })
 
 function stopSongs() {
-    sound.forEach(sound => {
-        song = document.getElementbyId(sound)
+    sounds.forEach(sound => {
+        song = document.getElementById(sound)
         song.pause()
         song.currentTime = 0
     })
+}
+
+nav = document.querySelector('.nav')
+
+window.addEventListener('scroll', fixNav)
+
+function fixNav() {
+    console.log(window.scrollY)
+    if (window.scrollY > 223) {
+        nav.classList.add('active')
+    } else {
+        nav.classList.remove('active')
+    }
 }
