@@ -5,6 +5,7 @@
 }
 
 body {
+
     color: #222;
     padding-bottom: 50px;
 }
@@ -15,7 +16,7 @@ body {
 }
 
 .hero {
-    background-image: url('images/dino.jpg');
+    background-image: url(images/computer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -31,7 +32,7 @@ body {
 }
 
 .hero::before {
-    content: "";
+    content: 'HELLO';
     position: absolute;
     top: 0;
     left: 0;
@@ -57,14 +58,15 @@ body {
 }
 
 .content p {
-    color: #555;
+    color: white;
     line-height: 30px;
     letter-spacing: 1.2px;
 }
 
+
 .nav {
     position: fixed;
-    background-color: #222;
+    background-color:#999;
     top: 0;
     left: 0;
     right: 0;
@@ -89,17 +91,17 @@ body {
 .nav a {
     color: white;
     text-decoration: none;
-    padding: 7px; 15px;
+    padding: 7px 15px;
     transition: all 0.3s ease-in-out;
 }
 
 .nav.active {
     background-color: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3)
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .nav.active a {
-    color: black;
+    color: white;
 }
 
 .nav.active .container {
